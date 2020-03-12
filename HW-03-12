@@ -1,0 +1,25 @@
+// 1.Parašykite funkciją, kuri grąžina skaičiaus kvadratą. Skaičius perduodamas kaip parametras.
+function square(number) {
+  return number ** 2;
+}
+console.log(number(1));
+// 2.Parašykite funkciją, kuri grąžina dviejų skaičių sumą. Skaičiai perduodami funkcijos parametrus.
+function sum(a,b) {
+    return (a+b);
+}
+console.log(sum(124,94));
+
+// 3.Parašykite funkciją, kuri iš antro parametro atima pirmą ir padalija iš trečio.
+function num(a,b,c) {
+    return (a-b/c);
+}
+console.log(num((40,20),4));
+
+// 4.Parašykite funkciją, kuri priima kaip parametrą skaičių nuo 1 iki 7, o grąžina savaitės dieną lietuvių kalba.
+function week (day){
+    let week =['Pirmadienis','Antradienis','Treciadienis','Ketvirtadienis','Penktadienis','Sestadienis', 'Sekmadienis'];
+    if (day<1&&day>7){
+      return 'Netesingas skaicius'}
+    return week[day-1];
+};
+console.log(week(3));
